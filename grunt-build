@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# npm config set color false
+npm install
+
+# grunt --no-color > target/grunt.status
+grunt

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="grunt-builder" default="grunt" basedir=".">
+	<target name="grunt">
+	  <echo>--- ant grunt build resources begin ---</echo>
+	  <exec dir="." executable="./grunt-build" failonerror="true" osfamily="unix" >
+	      	<arg value="dev" />
+      </exec>
+	  <echo>--- ant grunt build resources end ---</echo>
+	</target>
+</project>

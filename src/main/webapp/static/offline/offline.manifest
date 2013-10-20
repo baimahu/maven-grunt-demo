@@ -1,0 +1,28 @@
+CACHE MANIFEST
+
+#version: <!-- @echo buildVersion -->
+#timestamp: <!-- @echo timeStamp -->
+
+# chrome://appcache-internals/
+
+CACHE:
+../../favicon.ico
+
+#html files
+
+#style sheets
+../styles/main.min.css
+
+#javascript files
+../scripts/comm.min.js
+
+#image files
+
+#pdf files
+
+
+NETWORK:
+*
+
+
+FALLBACK:
