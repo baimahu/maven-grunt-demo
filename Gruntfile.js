@@ -194,10 +194,6 @@ module.exports = function(grunt) {
                     src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
                     dest: '<%= PRODUCTION_PATH %>' + 'static/images'                  // Destination path prefix
                 }]
-                /*files: { // Dictionary of files
-                   // 'destination': 'source'
-                    '<%= PRODUCTION_PATH %>static/images/mobile-icons/icon-144x144.png' : '<%= DEVELOPMENT_PATH %>' + 'static/images/mobile-icons/icon-144x144.png'
-                }*/
             }
         },
 
@@ -217,8 +213,6 @@ module.exports = function(grunt) {
                     { expand: true, cwd: '<%= DEVELOPMENT_PATH %>'+'static/libs/require/', src: 'require.js', dest: '<%= PRODUCTION_PATH %>'+'static/scripts/' } ,
                     // Copy favicon.ico file from dev/ to prod/.
                     { expand: true, cwd: '<%= DEVELOPMENT_PATH %>', src: 'favicon.ico', dest: '<%= PRODUCTION_PATH %>' }
-                    // Copy the image folder from dev/images/ to prod/images/.
-                   // { expand: true, cwd: '<%= DEVELOPMENT_PATH %>'+'static/', src: ['images/**'], dest: '<%= PRODUCTION_PATH %>'+'static/' }
                 ]
             }
         },
